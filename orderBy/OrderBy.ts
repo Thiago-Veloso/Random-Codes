@@ -2,7 +2,7 @@
 // Class for order array numbers
 // ---------------------------------------------------
 export class OrderBy {
-  static exempleList = [1, 26, 57, -34, 0, -3] as number[];
+  static readonly exempleList = [1, 26, 57, -34, 0, -3] as number[];
 
   constructor() {}
 
@@ -30,7 +30,7 @@ export class OrderBy {
           return true;
         }
 
-        // checks if it is in the last index of the array, if true, add in the end
+        // Checks if it is in the last index of the array, if true, add in the end
         if (ordedList.length - 1 === ordedListIndex)
           ordedList.push(desordedListNumber);
       });
@@ -39,5 +39,3 @@ export class OrderBy {
     return ordedList;
   }
 }
-
-console.log(OrderBy.crescent());
